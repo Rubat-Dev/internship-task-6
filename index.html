@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Blog Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- font awsome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- style-sheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center shadow">
+    <a href="" class="fw-1 logo">My Blog</a>
+    <button class="menu-btn fw-1 shadow" id="menuBtn">
+      <i class="fa-solid fa-bars"></i> 
+    </button>
+    <div class="menu flex gap-1" id="menu">
+      <ul type="none" class="flex gap-1 items-center">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#blog">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="toggle-btn fw-1 shadow" id="toggleMode">🌙 Dark Mode</button>
+    </div>
+  </nav>
+
+  <!-- Layout -->
+  <div class="container">
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- post-card-1 -->
+      <div class="post">
+        <img src="https://picsum.photos/800/300?random=1" alt="Blog 1">
+        <div class="post-content">
+          <h2 class="title">Exploring the Future of Web Development</h2>
+          <p class="date">August 14, 2025</p>
+          <p class="desc">Web development is evolving rapidly with modern frameworks and tools...</p>
+          <p class="extra">From React to Next.js, and serverless functions to AI-driven applications, the future is full of possibilities. Developers must keep learning to stay relevant in this fast-paced world.</p>
+          <button class="btn read-more">Read More</button>
+        </div>
+      </div>
+      <!-- post-card-2 -->
+      <div class="post">
+        <img src="https://picsum.photos/800/300?random=2" alt="Blog 2">
+        <div class="post-content">
+          <h2 class="title">Design Trends in 2025</h2>
+          <p class="date">August 16, 2025</p>
+          <p class="desc">Minimalism, bold colors, and immersive experiences are shaping UI/UX...</p>
+          <p class="extra">Design systems are becoming the backbone of scalable projects, ensuring consistency and accessibility across digital products.</p>
+          <button class="btn read-more">Read More</button>
+        </div>
+      </div>
+      <!-- post-card-3 -->
+      <div class="post">
+        <img src="https://picsum.photos/800/300?random=3" alt="Blog 3">
+        <div class="post-content">
+          <h2 class="title">Why JavaScript Still Rules</h2>
+          <p class="date">August 18, 2025</p>
+          <p class="desc">Despite new languages, JavaScript remains dominant in web development...</p>
+          <p class="extra">Its vast ecosystem, community support, and adaptability make it indispensable, powering everything from front-end frameworks to backend servers.</p>
+          <button class="btn read-more">Read More</button>
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- .search-bar -->
+      <div class="search-box">
+        <h3>Search</h3>
+        <input type="text" id="search" placeholder="search posts...">
+      </div>
+      <!-- categories -->
+      <div class="categories">
+        <h3>Categories</h3>
+        <ul>
+          <li>Web Development</li>
+          <li>UI/UX Design</li>
+          <li>Programing</li>
+          <li>Technology</li>
+        </ul>
+      </div>
+      <!-- recent-posts -->
+      <div class="recent-posts">
+        <h3>Recent Posts</h3>
+        <ul>
+          <li>Exploring the Future of Web Development</li>
+          <li>Design Trends in 2025</li>
+          <li>Why JavaScript Still Rules</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
