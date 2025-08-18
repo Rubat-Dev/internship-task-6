@@ -127,11 +127,12 @@ nav ul li a:hover::after {
   transition: all 0.3s ease;
   overflow: hidden;
 }
-
 .extra.open {
   height: 70px;
 }
-
+.read-more{
+  margin-top: 1rem;
+}
 .btn{
   display: inline-block;
   background: #2563eb;
