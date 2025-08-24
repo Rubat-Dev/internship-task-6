@@ -94,13 +94,13 @@ nav ul li a:hover::after {
   overflow: hidden;
   box-shadow: 0 6px 16px rgba(0,0,0,0.1);
   margin-bottom: 2rem;
-  transition: transform 0.3s, box-shadow 0.3s, background 0.5s, colors;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   /* opacity: 0; */
   transform: translateY(30px);
 }
 .post:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1)5;
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.2);
 }
 .post img{
   width: 100%;
@@ -119,7 +119,7 @@ nav ul li a:hover::after {
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
 }
-.desc{
+.desc, .extra, .date{
   color: #444;
 }
 .extra {
@@ -161,15 +161,16 @@ nav ul li a:hover::after {
 }
 .search-box input{
   width: 100%;
-  padding: 0.7rem;
-  border: 1px solid #ccc;
-  border-radius: 20px;
+  padding-block: 0.7rem;
+  padding-left: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 30px;
   outline: none;
   transition: border 0.3s, box-shadow 0.3s;
 }
 .search-box input:focus {
-  border: 1px solid #2563eb;
-  box-shadow: 0 0 6px rgba(37, 99, 235, 0.3);
+  border: 2px solid #2563eb;
+  box-shadow: 0 0 8px rgba(37,99,235,0.5);
 }
 .categories ul li, .recent-posts ul li:hover{
   margin-bottom: 0.6rem;
@@ -255,8 +256,20 @@ body.dark-mode .categories ul li{
  }
 }
 
-
-
+@media (max-width: 480px) {
+  .post-content h2 {
+    font-size: 1.2rem;
+  }
+  .post-content {
+    padding: 1rem;
+  }
+  .sidebar {
+    padding: 0.8rem;
+  }
+  .desc, .extra{
+    font-size: 0.9rem;
+  }
+}
 
 
 
