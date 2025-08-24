@@ -273,6 +273,9 @@ body.dark-mode .categories ul li{
   .desc, .extra{
     font-size: 0.9rem;
   }
+  .sidebar{
+    padding: 0 2rem;
+  }
 }
 
 
